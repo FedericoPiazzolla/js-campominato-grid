@@ -50,6 +50,12 @@ function play() {
 
     };
 
+    // al click di ogni casella si colora di blue
+    div.addEventListener("click", function () {
+      this.classList.add("blue");
+      console.log(this);
+    });
+
     grid.append(div);
 
   };
