@@ -43,12 +43,25 @@ h2 {
 }
 
 .cell {
-  width: calc(100% / 10);
-  aspect-ratio: 1;
   border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.easy {
+  width: calc(100% / 10);
+  aspect-ratio: 1;
+}
+
+.medium {
+  width: calc(100% / 9);
+  aspect-ratio: 1;
+}
+
+.hard {
+  width: calc(100% / 7);
+  aspect-ratio: 1;
 }
 
 .blue {
