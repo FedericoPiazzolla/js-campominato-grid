@@ -17,13 +17,16 @@ function play() {
   let newArray = "";
 
   if(valInput === "facile"){
-    newArray = gridGame(100);
+    newArray = numbArray(100);
   } else if (valInput === "avanzato") {
-      newArray = gridGame(81);
+      newArray = numbArray(81);
   } else if (valInput === "difficile") {
-      newArray = gridGame(49)
+      newArray = numbArray(49)
   };
 
+  // creo la griglia
+  const grid = document.querySelector(".grid");
+  grid.innerHTML = "";
 };
 
 // Creiamo la funzione che mi dia come risultato un array che va da 1 fino a 100, 81, 49
