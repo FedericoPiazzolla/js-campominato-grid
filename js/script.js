@@ -16,17 +16,36 @@ function play() {
   // scegliamo il tipo di difficoltà, e poi passiamo al ciclo for
   let newArray = "";
 
-  if(valInput === "facile"){
-    newArray = numbArray(100);
-  } else if (valInput === "avanzato") {
-      newArray = numbArray(81);
-  } else if (valInput === "difficile") {
-      newArray = numbArray(49)
-  };
-
   // creo la griglia
   const grid = document.querySelector(".grid");
   grid.innerHTML = "";
+
+  // creo il ciclo for per l'array
+  for(let i = 0; i < newArray.length; i++) {
+    const arrayI = newArray[i];
+    const div = document.createElement('div');
+    div.innerHTML = `<span>${arrayI}</span>`;
+    div.classList.add('cell');
+    grid.append(div);
+
+    console.log(div);
+
+    if(valInput === 'facile'){
+      cell.classList.add('alt10');
+      newArray = numbArray(100);
+
+    } else if (valInput === 'avanzato') {
+      cell.classList.add('alt9');
+      newArray = numbArray(81);
+
+    } else if (valInput === 'difficile') {
+      cell.classList.add('alt7');
+      newArray = numbArray(49)
+    };
+
+    grid.append(div);
+
+  };
 };
 
 // Creiamo la funzione che mi dia come risultato un array che va da 1 fino a 100, 81, 49
