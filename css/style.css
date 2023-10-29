@@ -25,6 +25,7 @@ button{
   height: calc(100vh - 100px);
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: aquamarine;
   color: black;
 }
@@ -34,6 +35,11 @@ button{
   flex-wrap: wrap;
   width: 800px;
   margin: 0 auto;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
 }
 
 .cell {
