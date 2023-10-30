@@ -12,4 +12,4 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 2. creiamo le costante per la scelta della difficoltà;
 3. creiamo la costante per l'avvio del gioco;
-4. al click sulla ciella, cambia colore;
+4. al click sulla cella, cambia colore;
