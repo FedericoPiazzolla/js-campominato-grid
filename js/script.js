@@ -1,4 +1,4 @@
-const btnPlay = document.getElementById("play");
+const btnPlay = document.getElementById("play-btn");
 btnPlay.addEventListener("click", play);
 
 // funzione al play del button
@@ -37,7 +37,7 @@ function play() {
 
     } else if (level === 'Medium') {
       div.classList.add('medium');
-      
+
     } else if (level === 'Hard') {
       div.classList.add('hard');
     };
